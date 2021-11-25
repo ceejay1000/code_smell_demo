@@ -1,7 +1,9 @@
 package com.ceejay;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Student {
 
@@ -10,6 +12,7 @@ public class Student {
     private String lastName;
     private String department;
     private LocalDate yearOfRegistration = LocalDate.now();
+    private List<Double> grades = new ArrayList<>();
 
     public Student(String id, String firstName, String lastName, String department) {
         this.id = id;
@@ -49,6 +52,14 @@ public class Student {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    public List<Double> getGrades(){
+        return this.grades;
+    }
+
+    public double getTotalGrades(){
+        return this.grades.stream().reduce(0.0, (a,b) -> a+b);
     }
 
     @Override

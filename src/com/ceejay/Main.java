@@ -8,8 +8,7 @@ public class Main {
     int max=7;
     int students=7;
 
-    //Clean example
-    int MAX_CLASSES_PER_STUDENT =7;
+
     ///////////////////////////////////////////////////////////////////////
 
     // Magic Variables
@@ -46,15 +45,8 @@ public class Main {
         // ...
     }
 
-    // Long methods
-    public void retrievingUsersBelowAge18FromTheListOfAvailabaleUsers(){
 
-    }
 
-    // cleanup
-    public void fetchUsersBelowAge18(){
-
-    }
 
 
     public static void main(String[] args) {
